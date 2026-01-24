@@ -71,8 +71,6 @@ p {
 
 .page-header .container {
   display: flex;
-  padding-bottom: 25px;
-  padding-top: 25px;
   align-items: center;
 }
 
@@ -92,6 +90,23 @@ p {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-left: 76px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .nav a {
@@ -389,6 +404,35 @@ h1 span {
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
+}
+
+.our-portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(77, 90, 229);
+
+  padding: 40px 32px;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay p {
+  color: #f4f4fd;
+}
+
+.our-portfolio-overlay:hover .overlay {
+  transform: translateX(0);
 }
 
 /* #endregion our-portfolio */
