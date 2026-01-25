@@ -493,6 +493,10 @@ h1 span {
   gap: 16px;
 }
 
+.socialmedia-footer .social {
+  gap: 16px;
+}
+
 .footer .container {
   display: flex;
   align-items: baseline;
