@@ -113,7 +113,7 @@ p {
   border-radius: 2px;
 }
 
-.nav-item .curent .nav-link {
+.nav-item.current .nav-link {
   color: #404bbf;
 }
 
@@ -378,6 +378,11 @@ h1 span {
   fill: #ffffff;
 }
 
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
+}
+
 /* #endregion our-team */
 
 /* #region our-portfolio */
@@ -495,6 +500,10 @@ h1 span {
 
 .socialmedia-footer .social {
   gap: 16px;
+}
+
+.socialmedia-footer p {
+  color: #ffffff;
 }
 
 .footer .container {
