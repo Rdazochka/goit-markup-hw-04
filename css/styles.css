@@ -502,6 +502,11 @@ h1 span {
   gap: 16px;
 }
 
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: #31d0aa;
+}
+
 .socialmedia-footer p {
   color: #ffffff;
 }
