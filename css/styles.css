@@ -509,6 +509,8 @@ h1 span {
 
 .socialmedia-footer p {
   color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .footer .container {
